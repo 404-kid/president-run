@@ -1,18 +1,50 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div >
+    <div class="d-flex justify-content-center flex-column align-items-center">
+      <div class="card" style="width: 50vw;" v-for="president in presidents">
+        <div class="card-body d-flex justify-content-center align-items-center flex-column">
+          <h5 class="card-title">{{president.name}}</h5>
+          <img class="card-img-top"  alt="Card image cap">
+          <p class="card-text">{{president.difficulty}}</p>
+          <router-link :to=president.link class="btn btn-primary">Do the workout</router-link>
+        </div>
+      </div> 
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+
+  },
+  data: function () {
+    return {
+    presidents: [
+      { 
+        name: "Washington",
+        link: "/washington",
+        difficulty: "extreme"
+      },
+      {
+        name: "Lincon",
+        link: "/lincon",
+        difficulty: "hardy"
+      },
+      {
+        name: "Bush.Jr",
+        link: "/bush",
+        difficulty: "novice"
+      },
+      {
+        name: "Obama",
+        link: "/obama",
+        difficulty: "No cake walk"
+      }
+    ]
+    }
   }
 }
 </script>
