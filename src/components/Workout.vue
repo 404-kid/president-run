@@ -1,6 +1,9 @@
 <template>
-<div>
-test
+<div class="d-flex justify-content-center flex-column align-items-center">
+  <img src="../assets/download.gif" alt="test">
+  <h1>{{this.$store.state.president[2].workout}}</h1>
+  <h5>{{this.$store.state.president[2].workoutDescription}}</h5>
+  <h3>difficulty rating {{this.$store.state.president[2].difficulty}}</h3>
 </div>
 </template>
 
@@ -8,13 +11,16 @@ test
 export default {
   name: 'workout',
   props: {
-    president
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+img{
+  height: 20rem;
+  width: 20rem;
+}
 h3 {
   margin: 40px 0 0;
 }

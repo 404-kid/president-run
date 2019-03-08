@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Workout :president="president"/>
+    <Workout president="bush"/>
   </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
   },
   data: function () {
     return {
-      president: "Lincon"
+      chara: "lincon"
     }
   }
 }
