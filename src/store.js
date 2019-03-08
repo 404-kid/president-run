@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    president: [
+    presidents: [
       {name: 'Washington',
       workout: 'Chopping Logs',
       formalImage: 'https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fparkmangenealogy.files.wordpress.com%2F2010%2F01%2Fgilbert-stuart-portrait-1796.jpg&f=1',
@@ -20,7 +20,7 @@ export default new Vuex.Store({
       workoutDescription: 'Heal a divided nation with the cleansing power of an axe',
       workoutGif: 'https://media.giphy.com/media/3ohzdCYtNjYwdfe8x2/giphy.gif'
       },
-      {name: 'Bush',
+      {name: 'Bush Jr',
       workout: 'Dodgeshoe',
       formalImage: 'https://radio.foxnews.com/wp-content/uploads/2012/05/5-31-G-W-Bush-Portrait.jpg',
       difficulty: 2,
