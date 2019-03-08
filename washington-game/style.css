@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 90vh;
+}
+
+.axe__container {
+    margin: 100px auto;
+}
+
+.axe {
+    transform: rotate(0deg);
+    transition: all .4s;
+}
+
+.axe:hover {
+    cursor: pointer;
+}
