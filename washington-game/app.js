@@ -4,6 +4,7 @@ $(document).ready(function(){
     let clicks = 0;
     let score = 0;
     let down = false
+    $('.score').text(score);
 
     $('.axe').click(function() {
         clicks++;
@@ -15,6 +16,7 @@ $(document).ready(function(){
         }
         // put axe down
         $('.axe').css('transform', `rotate(${degrees}deg)`);
+        $('.score').text(score);
         console.log(score);
     });
 
